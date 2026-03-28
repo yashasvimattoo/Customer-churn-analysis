@@ -62,7 +62,7 @@ This project focuses on analyzing customer purchasing behavior to identify churn
 
 ---
 
-## 📊 Dashboard Features
+##  Dashboard Features
 
 * KPI Cards (Revenue, Customers, Churn %)
 * Customer Segmentation Analysis
