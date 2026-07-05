@@ -1,13 +1,3 @@
-SET GLOBAL local_infile = 1;
-
-LOAD DATA LOCAL INFILE 'C:/Users/yasha/OneDrive/Documents/Customer Churn Analysis & Segmentation using RFM/data/Online Retail.csv'
-INTO TABLE `churn_project`.`retail_data`
-FIELDS TERMINATED BY ','
-ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
-
-
 CREATE TABLE `churn_project`.`retail_data` (
     InvoiceNo VARCHAR(20),
     StockCode VARCHAR(20),
@@ -18,6 +8,16 @@ CREATE TABLE `churn_project`.`retail_data` (
     CustomerID VARCHAR(20),
     Country VARCHAR(100)
 );
+
+
+SET GLOBAL local_infile = 1;
+
+LOAD DATA LOCAL INFILE 'C:/Users/yasha/OneDrive/Documents/Customer Churn Analysis & Segmentation using RFM/data/Online Retail.csv'
+INTO TABLE `churn_project`.`retail_data`
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
 
 
 

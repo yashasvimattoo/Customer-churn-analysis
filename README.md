@@ -46,12 +46,14 @@ This project focuses on analyzing customer purchasing behavior to identify churn
 
 ### 3. Churn Definition
 
-* Customers inactive for more than **30 days** were labeled as churned
+* Customers were classified as churned if their inactivity period exceeded the 75th percentile of historical purchase gaps (approximately 47 days). This data-driven threshold was used instead of an arbitrary cutoff period.
+> Note: Since the dataset covers a limited historical period, churn should be interpreted as customer inactivity risk rather than confirmed customer attrition.
 
 ### 4. Customer Segmentation
 
 * Champions
 * Loyal Customers
+* Average Customers
 * At Risk
 * Lost Customers
 
@@ -74,7 +76,7 @@ This project focuses on analyzing customer purchasing behavior to identify churn
 
 ##  Key Insights
 
-* A small percentage of customers generate the majority of revenue
+* High-value customer segments contribute a disproportionate share of total revenue
 * High churn observed in At Risk and Lost segments
 * Most customers drop off within the first few months
 * Customer inactivity is the primary driver of churn
@@ -92,4 +94,4 @@ This project focuses on analyzing customer purchasing behavior to identify churn
 
 ##  Conclusion
 
-This project highlights the importance of customer segmentation and early retention strategies. By combining RFM analysis with cohort tracking, businesses can proactively reduce churn and maximize customer lifetime value.
+This project highlights the importance of customer segmentation and early retention strategies. By combining RFM analysis with cohort tracking, businesses can proactively identify churn risk, improve customer retention, and support data-driven decision-making.

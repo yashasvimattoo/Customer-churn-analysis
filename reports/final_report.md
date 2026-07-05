@@ -28,17 +28,18 @@ Customers were segmented into the following groups based on RFM scores:
 * Champions: High value, frequent, and recent buyers
 * Loyal Customers: Regular buyers with consistent activity
 * At Risk: Previously active but recently inactive customers
-* Lost Customers: Customers who have not purchased in a long time
+* Lost Customers: Customers exhibiting prolonged inactivity and a high likelihood of churn
 
 ### KEY INSIGHTS:
-* A small percentage of customers (Champions) contribute a disproportionately high share of total revenue.
+* High-value customer segments contribute a disproportionately large share of total revenue, highlighting the importance of targeted retention strategies.
 * A significant portion of customers fall into the "At Risk" and "Lost" segments, indicating retention challenges.
 * Customers with low purchase frequency and high inactivity are more likely to churn.
-* Churn is strongly correlated with recency, suggesting inactivity as the primary driver.
+* Customer inactivity (high recency) emerged as the strongest indicator of churn risk.
+* Approximately 13.8% of total revenue was associated with At Risk and Lost customer segments, highlighting significant revenue exposure due to churn.
 
 
 ### CHURN ANALYSIS:
-Churn was defined as customers who have not made a purchase in the last 30 days.
+Customers were classified as churned if their inactivity period exceeded the 75th percentile of historical purchase gaps (approximately 47 days). This data-driven threshold was used instead of an arbitrary cutoff period.
 
 Analysis showed:
 
@@ -47,7 +48,9 @@ Analysis showed:
 
 This highlights the importance of early intervention to retain valuable customers.
 
-### BUISNESS RECOMMENDATIONS:
+Note: Since the dataset contains a limited historical observation window, churn should be interpreted as customer inactivity risk rather than confirmed customer attrition.
+
+### BUSINESS RECOMMENDATIONS:
 Based on the analysis, the following actions are recommended:
 
 * Champions: Offer loyalty rewards and exclusive benefits to retain high-value customers
@@ -64,6 +67,6 @@ Additionally, early-stage engagement strategies should be implemented to reduce 
 * Power BI for dashboard visualization
 
 ### CONCLUSION:
-The project successfully identified key drivers of customer churn and highlighted the importance of customer activity and engagement. By leveraging RFM segmentation, targeted retention strategies can be implemented to reduce churn and maximize customer lifetime value.
+The project successfully identified key drivers of customer churn and demonstrated how customer segmentation and retention analysis can support data-driven business decisions and improve customer retention strategies.
 
- --- Cohort analysis was performed to track customer retention over time. The results showed a significant drop in retention within the first few months after initial purchase, indicating that early-stage engagement is critical. Customers who do not return within the initial period are highly likely to churn.
+ --- Cohort analysis was performed to track customer retention over time. Cohort analysis revealed that customer retention declined sharply after the first purchase cycle, with only 30–40% of customers returning in subsequent periods. This suggests that weak early-stage engagement is a major contributor to customer churn. Customers who do not return within the initial period are highly likely to churn.
